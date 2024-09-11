@@ -5,12 +5,13 @@ namespace Sitecore.Demo.Edge.Website.Utilities
 {
 	public partial class Restart : System.Web.UI.Page
 	{
-		protected void Page_Load(object sender, EventArgs e)
-		{
+	    protected void Page_Load(object sender, EventArgs e)
+	    {
             //Try unloading appdomain
             try
             {
                 //note that UnloadAppDomain requires full trust
+		Sitecore.Diagnostics.Log.Info("I am restarting, bitches!", this);
                 HttpRuntime.UnloadAppDomain();
             }
             catch (Exception ex)
