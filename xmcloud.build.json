@@ -33,7 +33,6 @@
           },
           "warmUpCm": {
             "urls": [
-              "/Utilities/Restart.aspx",
               "/Utilities/InitializeComponentsLibraryId.aspx",
               "/Utilities/InitializePointOfSale.aspx"
             ]
